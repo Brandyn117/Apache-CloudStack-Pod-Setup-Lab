@@ -7,4 +7,7 @@ This project documents a lab environment set up for exploring Apache CloudStack 
 💻 Part 1 - VMware ESXi Installation
 <br>
 <br>
-We were given a bare metal serer that was wiped and then we installed wVMware ESXi on it. 
+We were given a bare metal serer that was wiped and then we installed wVMware ESXi on it:
+<br>
+
+images/Screenshot 2025-06-05 180150.png
