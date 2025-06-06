@@ -9,5 +9,5 @@ This project documents a lab environment set up for exploring Apache CloudStack 
 <br>
 We were given a bare metal serer that was wiped and then we installed wVMware ESXi on it:
 <br>
+<img src="images/Screenshot 2025-06-05 180150.png" alt="hostname" height="550">
 
-images/Screenshot 2025-06-05 180150.png
