@@ -19,7 +19,9 @@ Note that the IP addresses are different between the screenshots because we kept
 Here, the ESXi configuration summary screen provides key details about the host, such as its CPU, memory, storage, and network configuration. Reviewing this information helped us ensure that the host was correctly recognized and ready to support virtual infrastructure provisioning.
 <img src="images/Screenshot 2025-06-05 182444.png" alt="hostname" height="550">
 <br>
-<h2> Part 2 - VMware VCenter Installation </h2>
+<h2> 💻 Part 2 - VMware VCenter Installation </h2>
+<br>
+VMware vCenter Server is a centralized management platform that lets you manage multiple ESXi hypervisors, virtual machines, and associated resources from a single web interface. It's easier to manage multiple ESXi hosts through Vcenter rather than managing each one through its web interface (https://<host-ip>)
 <br>
 In this step, we specified the deployment target for the vCenter Server — the ESXi host where the vCenter VM would be installed. We entered the ESXi host’s IP address (192.168.4.241), HTTPS port (443), and administrative credentials (root). This began Stage 1 of the vCenter installer workflow. ✍️ Note: During the lab, the ESXi host was initially assigned a static IP in the `192.168.0.57`, '192.168.1.241', and '192.168.1.245'. Before deploying vCenter, we reconfigured the ESXi host with a new static IP address: `192.168.4.241`, to align with our management subnet used for centralized orchestration:
 
@@ -47,6 +49,8 @@ The first post-deployment step was to create a datacenter within vCenter. This l
 <br>
 Finally, we added our ESXi hosts to the vCenter datacenter. This allows centralized management, VM migration, monitoring, and clustering features:
 <img src="images/Screenshot 2025-06-05 190721.png" alt="hostname" height="550">
+<br>
+<img src="images/Screenshot 2025-06-05 191639.png" alt="hostname" height="550">
 <br>
 <img src="images/Screenshot 2025-06-05 190826.png" alt="hostname" height="550">
 
