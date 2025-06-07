@@ -29,7 +29,7 @@ This screenshot shows the final stage of the mysql_secure_installation command, 
 <br>
 <img src="images/Screenshot 2025-06-06 144923.png" alt="CloudStack">
 <h2> 🖼️ 7. Editing SELinux Config to Permissive </h2>
-Apache CloudStack doesn’t work well with SELinux in enforcing mode by default. This screenshot shows you editing /etc/selinux/config and switching SELinux to permissive mode, ensuring CloudStack services won’t be blocked by SELinux policies.
+Apache CloudStack doesn’t work well with SELinux in enforcing mode by default. This screenshot shows editing /etc/selinux/config and switching SELinux to permissive mode, ensuring CloudStack services won’t be blocked by SELinux policies.
 <br>
 <br>
 <img src="images/Screenshot 2025-06-06 144943.png" alt="CloudStack">
@@ -44,9 +44,22 @@ This screenshot captures a successful run of cloudstack-setup-databases, which i
 Here, the cloudstack-setup-management command is used to configure the CloudStack management server. A message confirms setup is complete and notes which ports (8080, 8250, 8443, 9090) must be open for web access.
 <br>
 <img src="images/Screenshot 2025-06-06 145003.png" alt="CloudStack" width="600">
-
-
-
+<h2> 🖼️ 10. NFS Storage Directories and Export Setup </h2>
+CloudStack requires shared storage, and in this screenshot, I created /export/primary and /export/secondary directories and configured them for NFS export. I then used exportfs -a to activate the exports.
+<img src="images/Screenshot 2025-06-06 145141.png" alt="CloudStack" width="600">
+<br>
+<img src="images/Screenshot 2025-06-06 145213.png" alt="CloudStack" width="600">
+<h2> 🖼️ 11. Firewall Rules Configured with iptables </h2>
+This screenshot shows /etc/sysconfig/iptables where custom firewall rules were added to allow essential CloudStack ports (e.g., 8080, 8250, 8443, 9090, NFS ports, etc.). These rules ensure that the management server and services are reachable through the network.
+<br>
+<br>
+<img src="images/Screenshot 2025-06-06 145327.png" alt="CloudStack" width="600">
+<h2> 🖼️ 12. Apache CloudStack Web UI – Dashboard Access</h2>
+This screenshot confirms that the Apache CloudStack web dashboard is accessible at 192.168.4.150:8080, indicating that the management server is working and reachable via browser. From here, you can manage zones, storage, hypervisors, and more.
+<img src="images/Screenshot 2025-06-06 145440.png" alt="CloudStack" width="600">
+<h2> 🖼️ 13. Creating a VM via vSphere for CloudStack Use </h2>
+This shows a new virtual machine being created in VMware ESXi (via vSphere). This VM could later be used as a CloudStack-managed guest, secondary controller, or additional system infrastructure — bridging your ESXi and CloudStack setups.
+<img src="images/Screenshot 2025-06-06 145425.png" alt="CloudStack" width="600">
 
 
 
