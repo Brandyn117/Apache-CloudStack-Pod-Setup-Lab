@@ -23,6 +23,27 @@ After configuring the database, we started the MySQL service and ran mysql_secur
 <br>
 <br>
 <img src="images/Screenshot 2025-06-06 144822.png" alt="CloudStack">
+<h2> 🖼️ 6. MySQL Secure Installation Finalization </h2>
+This screenshot shows the final stage of the mysql_secure_installation command, where insecure defaults are removed (anonymous users, test database), and root login is restricted. This hardens the MySQL setup before being used as CloudStack's backend.
+<br>
+<br>
+<img src="images/Screenshot 2025-06-06 144923.png" alt="CloudStack">
+<h2> 🖼️ 7. Editing SELinux Config to Permissive </h2>
+Apache CloudStack doesn’t work well with SELinux in enforcing mode by default. This screenshot shows you editing /etc/selinux/config and switching SELinux to permissive mode, ensuring CloudStack services won’t be blocked by SELinux policies.
+<br>
+<br>
+<img src="images/Screenshot 2025-06-06 144943.png" alt="CloudStack">
+<h2> 🖼️ 8.  Initializing the CloudStack Database </h2>
+This screenshot captures a successful run of cloudstack-setup-databases, which initializes the CloudStack schema and creates all necessary tables. It confirms MySQL is working and that CloudStack can communicate with it.
+<br>
+<br>
+<img src="images/Screenshot 2025-06-06 145121.png" alt="CloudStack" width="700">
+<br>
+<br>
+<h2> 🖼️ 9. Configuring and Starting the CloudStack Management Server </h2>
+Here, the cloudstack-setup-management command is used to configure the CloudStack management server. A message confirms setup is complete and notes which ports (8080, 8250, 8443, 9090) must be open for web access.
+<br>
+<img src="images/Screenshot 2025-06-06 145003.png" alt="CloudStack" width="600">
 
 
 
