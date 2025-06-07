@@ -39,7 +39,6 @@ This screenshot captures a successful run of cloudstack-setup-databases, which i
 <br>
 <img src="images/Screenshot 2025-06-06 145121.png" alt="CloudStack" width="700">
 <br>
-<br>
 <h2> 🖼️ 9. Configuring and Starting the CloudStack Management Server </h2>
 Here, the cloudstack-setup-management command is used to configure the CloudStack management server. A message confirms setup is complete and notes which ports (8080, 8250, 8443, 9090) must be open for web access.
 <br>
@@ -58,7 +57,7 @@ This screenshot shows /etc/sysconfig/iptables where custom firewall rules were a
 This screenshot confirms that the Apache CloudStack web dashboard is accessible at 192.168.4.150:8080, indicating that the management server is working and reachable via browser. From here, you can manage zones, storage, hypervisors, and more.
 <img src="images/Screenshot 2025-06-06 145440.png" alt="CloudStack" width="600">
 <h2> 🖼️ 13. Creating a VM via vSphere for CloudStack Use </h2>
-This shows a new virtual machine being created in VMware ESXi (via vSphere). This VM could later be used as a CloudStack-managed guest, secondary controller, or additional system infrastructure — bridging your ESXi and CloudStack setups.
+This shows a new virtual machine being created in VMware ESXi (via vSphere). This VM could later be used as a CloudStack-managed guest, secondary controller, or additional system infrastructure, bridging your ESXi and CloudStack setups.
 <img src="images/Screenshot 2025-06-06 145425.png" alt="CloudStack" width="600">
 
 
