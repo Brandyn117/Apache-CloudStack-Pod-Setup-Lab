@@ -18,7 +18,7 @@ MySQL (specifically MariaDB or MySQL Community Server) is used as CloudStack’s
 <br>
 <br>
 <img src="images/Screenshot 2025-06-06 144706.png" alt="CloudStack" width="600">
-<h2> 🖼️ 6. Starting MySQL and Running the Secure Setup </h2>
+<h2> 🖼️ 5. Starting MySQL and Running the Secure Setup </h2>
 After configuring the database, we started the MySQL service and ran mysql_secure_installation to set the root password, remove anonymous users, and secure the installation. This step is essential before initializing the CloudStack database schema. Apologies for the blurry photo. 
 <br>
 <br>
