@@ -38,7 +38,6 @@ This screenshot captures a successful run of cloudstack-setup-databases, which i
 <br>
 <br>
 <img src="images/Screenshot 2025-06-06 145121.png" alt="CloudStack" width="700">
-<br>
 <h2> 🖼️ 9. Configuring and Starting the CloudStack Management Server </h2>
 Here, the cloudstack-setup-management command is used to configure the CloudStack management server. A message confirms setup is complete and notes which ports (8080, 8250, 8443, 9090) must be open for web access.
 <br>
