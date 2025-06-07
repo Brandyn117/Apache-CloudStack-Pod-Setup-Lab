@@ -59,6 +59,8 @@ This screenshot confirms that the Apache CloudStack web dashboard is accessible 
 <h2> 🖼️ 13. Creating a VM via vSphere for CloudStack Use </h2>
 This shows a new virtual machine being created in VMware ESXi (via vSphere). This VM could later be used as a CloudStack-managed guest, secondary controller, or additional system infrastructure, bridging your ESXi and CloudStack setups.
 <img src="images/Screenshot 2025-06-06 145425.png" alt="CloudStack" width="600">
+<br>
+This is the furthest we got in this lab due to time constraints. Thank you for taking the time to view my work. 
 
 
 
