@@ -62,6 +62,8 @@ This section contains several screenshots demonstrating my experience working wi
 
 To keep this README concise and focused, I’ve documented this phase in a separate markdown file:
 <br>
+[CloudStack Installation Walkthrough](docs/Part3-CloudStack-Walkthrough.md)
+<br>
 
 
 
