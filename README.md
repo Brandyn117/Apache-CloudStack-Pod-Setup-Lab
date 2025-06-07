@@ -53,6 +53,16 @@ Finally, we added our ESXi hosts to the vCenter datacenter. This allows centrali
 <img src="images/Screenshot 2025-06-05 191639.png" alt="hostname" height="550">
 <br>
 <img src="images/Screenshot 2025-06-05 190826.png" alt="hostname" height="550">
+<br>
+<h2> 💻 Part 3 - CloudStack Installation </h2>
+<br>
+To complete this phase of the project, I ran a CentOS virtual machine in VirtualBox at home since our lab environment did not have internet access. After completing the installation, I transferred the .vdi file to a flash drive to continue the setup in the lab.
+
+This section contains several screenshots demonstrating my experience working with a Linux distribution.
+
+To keep this README concise and focused, I’ve documented this phase in a separate markdown file:
+<br>
+
 
 
 
